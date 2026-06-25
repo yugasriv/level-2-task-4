@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Registration Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚀 Smart Registration Portal</h1>
+
+<button id="themeBtn">🌙 Toggle Theme</button>
+
+<form id="registerForm">
+
+<input type="text" id="name" placeholder="Full Name">
+<span class="error" id="nameError"></span>
+
+<input type="email" id="email" placeholder="Email Address">
+<span class="error" id="emailError"></span>
+
+<input type="password" id="password" placeholder="Password">
+<div id="strength"></div>
+<span class="error" id="passwordError"></span>
+
+<div class="skill-box">
+<input type="text" id="skillInput" placeholder="Add Skill">
+<button type="button" id="addSkill">Add</button>
+</div>
+
+<ul id="skillList"></ul>
+
+<button type="submit">Register</button>
+
+</form>
+
+<div id="successMessage"></div>
+
+<div class="preview">
+<h2>Live Profile Preview</h2>
+<p id="previewName">Name: -</p>
+<p id="previewEmail">Email: -</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
